@@ -72,7 +72,7 @@ if($_SERVER['REQUEST_METHOD'] =="POST"){
           <h4 class="alert-heading"Registered!</h4>
           <p>The account could not be registered for the following reason(s)</p>'; 
           foreach($errors as $msg){
-            echo ' -$msg<br>';
+            echo " -$msg<br>";
           }
           echo '<p>Please try again!</p>';
           mysqli_close($link);
@@ -81,7 +81,7 @@ if($_SERVER['REQUEST_METHOD'] =="POST"){
 ?>
 
 
-  <div class=container>
+  
     <form class="row g-3">
         <div class="col-md-6">
             <label for="first_name" class="form-label" placeholder="First Name">First Name</label>
@@ -108,7 +108,7 @@ if($_SERVER['REQUEST_METHOD'] =="POST"){
           <button type="submit" class="btn btn-primary">Create Account Now </button>
         </div>
       </form>
-    </div>
+    
 </body>
 
 </html>
