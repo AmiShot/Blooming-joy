@@ -94,9 +94,7 @@ if ($_SERVER['REQUEST_METHOD'] == "POST") {
           <h1>Create Account</h1>
         </div>
         <div class="card-body">
-          <form action="user_reg.php" method="post">
-            <div class="card-body">
-              <form action="user_reg.php" method="post">
+			<form action="user_reg.php" method="post">
                 <div class="row">
                   <div class="col-md-6">
                     <div class="form-group">
