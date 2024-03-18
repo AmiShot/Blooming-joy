@@ -45,6 +45,7 @@ if (isset ($errors) && !empty ($errors)) {
                                     <button type="submit" class="btn btn-lg btn-block"
                                         style="background-color: #d63384; color:#FFF">Log in </button>
                                 </div><!-- closing row -->
+                                </div>
                     </form><!-- closing form -->
                 </div><!-- closing card header -->
             </div><!-- closing card -->
