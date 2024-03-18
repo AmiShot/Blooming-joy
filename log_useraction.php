@@ -5,7 +5,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST'){
    # Get connection, load and validate functions
     require('log_usertools.php');
     #check login
-    list($check, $data) = validate ($link, $_POST['email'], $_POST['pass']) ;
+    list($check, $data) = validate ($link, $_POST['email'], $_POST['pwd']) ;
 
   # On success set session data and display logged in page
   if ($check){
@@ -26,4 +26,3 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST'){
 include ( 'log_user.php' ) ;
 
 ?>
-

@@ -19,7 +19,7 @@ if (isset ($errors) && !empty ($errors)) {
                     <h1>Log In</h1>
                 </div>
                 <div class="card-body">
-                    <form action="log_user.php" method="post">
+                <form action="log_useraction.php" method="post">
                         <div class="row">
                             <div class="col-md-12">
                                 <div class="form-group">
@@ -31,21 +31,20 @@ if (isset ($errors) && !empty ($errors)) {
                         </div><!-- closing row -->
 
                         <div class="row">
-                            <div class="col-md-6">
+                            <div class="col-md-12">
                                 <div class="form-group">
-                                    <label for="inputPassword1" class="form-label">Create New Password</label>
-                                    <input type="password" class="form-control" name="inputPassword1" required
-                                        placeholder="Create New Password">
+                                    <label for="pwd" class="form-label">Password</label>
+                                    <input type="password" class="form-control" name="pwd" required
+                                        placeholder="Enter Password">
                                 </div>
                             </div>
-
-
+                            </div>
                             <div class="row">
                                 <div class="col-md-12">
                                     <button type="submit" class="btn btn-lg btn-block"
-                                        style="background-color: #d63384; color:#FFF">Log in </button>
-                                </div><!-- closing row -->
+                                        style="background-color: #d63384; color:#FFF">Log in</button>
                                 </div>
+                            </div>
                     </form><!-- closing form -->
                 </div><!-- closing card header -->
             </div><!-- closing card -->
