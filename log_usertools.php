@@ -22,11 +22,10 @@ function validate($link, $email = '', $pwd = ''){
     }
     #check password
 
-    if(empty($pwd)){
-        $errors[] = 'Please Enter a password';
-    }else{
-        $p = mysqli_real_escape_string($link, trim($pwd));
-    }
+  if ( empty( $pwd ) ) 
+  { $errors[] = 'Enter your password.' ; } 
+  else { $p = mysqli_real_escape_string( $link, trim( $pwd ) ) ; }
+
     #On success retrieve user_id, first_name, last-name
     if(empty($errors)){
         $q = "SELECT user_id, first_name, last_name FROM users WHERE email='$e' AND pass='$p' ";
