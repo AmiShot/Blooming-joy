@@ -57,7 +57,7 @@ if ( $_SERVER[ 'REQUEST_METHOD' ] == 'POST' )
     {
        header("Location: read.php");
     } else {
-        echo "Error updating record: " . $link->error;
+        echo "Error updating record: " . $link->$error;
     }
   
     # Close database connection.
